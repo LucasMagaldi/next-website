@@ -47,6 +47,7 @@
     align-items: center;
     text-align: center;
     list-style: none;
+    transition: all 2s ease;
 }
 
 .header_items {
@@ -101,6 +102,7 @@
             height: 3px;
             width: 100%;
             border-radius: 30px;
+            transition: 0.25s ease-in-out;
     }
 
     span:nth-child(1){
@@ -135,10 +137,14 @@
         width: 100%;
         background-color: #131313;
         z-index: 2;
-        top: 200px;
+        top: -300px;
         left: 0;
     }
 
-   
-
+    .header_menu.active {
+        position: fixed;
+        justify-content: center;
+        top: 70px;   
+        height: 100vh;   
+    }
 }
